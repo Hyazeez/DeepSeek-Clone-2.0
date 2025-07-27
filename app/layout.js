@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter } from "next/font/google"; //Google fonts
 import "./globals.css";
 
 const inter = Inter({
@@ -7,7 +7,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "DeepSeek Clone 2.0",
+  title: "DeepSeek Clone Web Application",
   description: "Full Stack Project",
   icons: {
     icon: "/favicon.ico",
