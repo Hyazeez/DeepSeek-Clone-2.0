@@ -11,12 +11,12 @@ export default function Home() {
 
   return (
     <div className="flex h-screen">
-      <Sidebar/>
+      <Sidebar expand={expand} setExpand={setExpand}/>
       <div className="flex-1 flex flex-col items-center justify-center px-4 pb-8 bg-[#292a2d] text-white relative">
         
         <div className="md:hidden absolute px-4 top-6 flex items-center justify-between w-full">
           <Image
-            onClick={() => setExpand(!expand)}
+            onClick={() => setExpand(prev=>!prev)}
             src={assets.menu}
             width={24}
             height={24}
@@ -27,7 +27,7 @@ export default function Home() {
             src={assets.chat}
             width={30}
             height={30}
-            className="opacity-70 mr-6"
+            className="opacity-70"
             alt="menu-bar"
           />
         </div>
@@ -49,7 +49,6 @@ export default function Home() {
           ) : (
             <>
             <div>
-
             </div>
             </>
           )}

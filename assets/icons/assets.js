@@ -11,6 +11,7 @@ import logo from "../icons/deepseek.png";
 import open from "../icons/open.png";
 import close from "../icons/close.png";
 import logotext from "../icons/deepseek-text.png";
+import sidebar from "../icons/sidebar.png";
 
 export const assets = {
     bot,
@@ -25,5 +26,6 @@ export const assets = {
     logo,
     open,
     close,
-    logotext
+    logotext,
+    sidebar
 }
