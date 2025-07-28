@@ -3,6 +3,7 @@ import { assets } from "@/assets/icons/assets";
 import Sidebar from "@/components/Sidebar";
 import Image from "next/image";
 import { useState } from "react";
+import PromptBox from "@/components/PromptBox";
 
 export default function Home() {
   const [expand, setExpand] = useState(false);
@@ -53,6 +54,7 @@ export default function Home() {
             </>
           )}
         </div>
+        <PromptBox isloading={isloading} setIsLoading={setIsLoading}/>
         <div className="w-full flex justify-center">
           <p className="text-xs absolute bottom-1 text-gray-500 text-center">AI-generated, for reference only</p>
         </div>
